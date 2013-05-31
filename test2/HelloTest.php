@@ -9,16 +9,7 @@ class HelloTest extends PHPUnit_Framework_TestCase
     /**
      * @var Hello
      */
-    protected $object;
-
-    /**
-     * Sets up the fixture, for example, opens a network connection.
-     * This method is called before a test is executed.
-     */
-    protected function setUp()
-    {
-        $this->object = new Hello;
-    }
+    protecte
 
     /**
      * Tears down the fixture, for example, closes a network connection.
@@ -31,17 +22,17 @@ class HelloTest extends PHPUnit_Framework_TestCase
     /**
      * @covers Hello::getMessage
      */
-	public function testGetMessage()
-	{
-	    $this->assertEquals("hello world", $this->object->getMessage());
-	}
+  public function testGetMessage()
+  {
+      $this->assertEquals("hello world", $this->object->getMessage());
+  }
 
     /**
      * @covers Hello::moreMessage
      */
     public function testMoreMessage()
     {
-    	$name = "tomoko";
-    	$this->assertEquals("Hello, ". $name, $this->object->moreMessage($name));
+      $name = "tomoko";
+      $this->assertEquals("Hello, ". $name, $this->object->moreMessage($name));
     }
 }
