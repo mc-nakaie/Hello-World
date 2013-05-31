@@ -8,7 +8,9 @@ class Hello
 
     public function moreMessage($name)
     {
-    	return "Hello, " . $name;
+
+      return "Hello, " . $name;
+
     }
 }
 ?>
